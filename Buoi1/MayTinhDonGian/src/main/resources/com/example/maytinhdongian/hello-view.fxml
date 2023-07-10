@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.maytinhdongian.HelloController">
+    <HBox>
+        <TextField promptText="Number 1" fx:id="num1"/>
+    </HBox>
+    <HBox>
+        <TextField promptText="Number 2" fx:id="num2"/>
+    </HBox>
+    <HBox>
+        <Button text="+" onAction="#plus"/>
+        <Button text="-" onAction="#subtraction"/>
+        <Button text="*" onAction="#multiplication"/>
+        <Button text="/" onAction="#div"/>
+    </HBox>
+</VBox>
