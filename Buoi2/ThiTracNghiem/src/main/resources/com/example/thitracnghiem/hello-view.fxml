@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.thitracnghiem.HelloController">
+    <Button text="Wellcome to the test!" onAction="#onHelloButtonClick" fx:id="button"/>
+
+    <VBox fx:id="start" visible="false">
+        <Label text="Cau 1: 1 + 1 = ?"/>
+        <HBox>
+            <RadioButton text="A. 2" fx:id="firstA">
+                <toggleGroup>
+                    <ToggleGroup fx:id="toggleGroup"/>
+                </toggleGroup>
+            </RadioButton>
+            <RadioButton toggleGroup="$toggleGroup" text="B. 4" fx:id="firstB"/>
+        </HBox>
+        <Label text="Cau 1: 4 * 3  = ?"/>
+        <HBox>
+            <RadioButton text="A. 2" fx:id="secondA">
+                <toggleGroup>
+                    <ToggleGroup fx:id="toggleGroup1"/>
+                </toggleGroup>
+            </RadioButton>
+            <RadioButton toggleGroup="$toggleGroup1" text="B. 12" fx:id="secondB"/>
+        </HBox>
+        <Button text="Submit" onAction="#end"/>
+    </VBox>
+
+    <VBox fx:id="end" visible="false">
+        <Label text="Result: "/>
+        <Label fx:id="result"/>
+
+    </VBox>
+</VBox>
+

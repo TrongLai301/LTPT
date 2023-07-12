@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.quanlidiemso.HelloController">
+    <HBox>
+        <VBox>
+            <HBox>
+                <Label text="Id: "/>
+                <TextField fx:id="idField"/>
+            </HBox>
+            <HBox>
+                <Label text="Name: "/>
+                <TextField fx:id="nameField"/>
+            </HBox>
+            <HBox>
+                <Label text="Class: "/>
+                <TextField fx:id="nameClassField"/>
+            </HBox>
+            <HBox>
+                <Label text="Gender: "/>
+                <TextField fx:id="genderFiled"/>
+            </HBox>
+            <HBox>
+                <Label text="Gmail: "/>
+                <TextField fx:id="gmailField"/>
+            </HBox>
+            <HBox>
+                <Label text="Score: "/>
+                <TextField fx:id="scoreField"/>
+            </HBox>
+        </VBox>
+
+        <HBox>
+            <VBox>
+                <Button text="Submit" onAction="#submit"/>
+                <Button text="Remove" onAction="#remove"/>
+                <Button text="Edit" onAction="#edit"/>
+            </VBox>
+            <VBox>
+                <HBox>
+                    <Button onAction="#fix" text="Fix"/>
+                <TextField visible="false" promptText="Select Id" fx:id="hideField"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </HBox>
+    <TableView fx:id="tableView" prefHeight="500.0" layoutX="300.0" layoutY="200.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="nameColumn" text="NAME"/>
+            <TableColumn fx:id="nameClassColumn" text="CLASS"/>
+            <TableColumn fx:id="genderColumn" text="GENDER"/>
+            <TableColumn fx:id="gmailColumn" text="GMAIL"/>
+            <TableColumn fx:id="scoreColumn" text="SCORE"/>
+        </columns>
+    </TableView>
+</VBox>
