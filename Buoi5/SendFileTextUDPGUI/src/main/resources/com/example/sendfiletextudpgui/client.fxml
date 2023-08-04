@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.sendfiletextudpgui.clientController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox>
+<!--        <ScrollPane prefHeight="200" prefWidth="400"/>-->
+        <TextArea  prefHeight="200" prefWidth="400" fx:id="textAreaClient"/>
+        <HBox>
+            <TextArea prefWidth="310" prefHeight="10" fx:id="textSend"/>
+            <VBox>
+            <Button prefWidth="90" prefHeight="20" text="Enter" onAction="#enter"/>
+            <Button prefWidth="90" prefHeight="20" text="Stop" onAction="#stop"/>
+            </VBox>
+        </HBox>
+    </VBox>
+
+
+</AnchorPane>

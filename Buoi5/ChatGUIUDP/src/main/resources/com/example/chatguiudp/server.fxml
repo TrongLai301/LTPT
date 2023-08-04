@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.chatguiudp.ServerController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button fx:id="send" layoutX="400" layoutY="350" text="SEND"/>
+        <TextField fx:id="message" layoutX="30" layoutY="350" prefWidth="360" prefHeight="30"/>
+        <ScrollPane fx:id="display" layoutY="70" layoutX="30" prefHeight="256" prefWidth="418" fitToWidth="true">
+            <content>
+                <VBox fx:id="messageSend_Vbox" prefWidth="248" prefHeight="412"/>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
